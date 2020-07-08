@@ -30,7 +30,7 @@ function bayarSekarang() {
         "Kecamatan: " + kecamatan + " | " +
         "No Telepon: " + notelepon + " | " +
         "Varian: " + varian;
-    var wa = "https://wa.me/6285879830690?text=" + data;
+    var wa = "https://wa.me/6285157302556?text=" + data;
     window.location.href = wa, true;
 
 }
