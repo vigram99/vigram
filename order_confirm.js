@@ -23,12 +23,12 @@ function bayarSekarang() {
     kota = document.querySelector("[name='kota']").value;
     kecamatan = document.querySelector("[name='kecamatan']").value;
     notelepon = document.querySelector("[name='notelepon']").value;
-    data = "Nama Lengkap: " + nama + "\n" +
-        "Alamat: " + alamat + "\n" +
-        "Provinsi: " + provinsi + "\n" +
+    data = "Halo kak saya ingin order dengan data berikut: | Nama Lengkap: " + nama + " | " +
+        "Alamat: " + alamat + " | " +
+        "Provinsi: " + provinsi + " | " +
         "Kota: " + kota + "\n" +
-        "Kecamatan: " + kecamatan + "\n" +
-        "No Telepon: " + notelepon + "\n" +
+        "Kecamatan: " + kecamatan + " | " +
+        "No Telepon: " + notelepon + " | " +
         "Varian: " + varian;
     var wa = "https://wa.me/6285879830690?text=" + data;
     window.location.href = wa, true;
