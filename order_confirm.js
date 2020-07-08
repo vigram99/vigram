@@ -26,7 +26,7 @@ function bayarSekarang() {
     data = "Halo kak saya ingin order dengan data berikut: | Nama Lengkap: " + nama + " | " +
         "Alamat: " + alamat + " | " +
         "Provinsi: " + provinsi + " | " +
-        "Kota: " + kota + "\n" +
+        "Kota: " + kota + " | " +
         "Kecamatan: " + kecamatan + " | " +
         "No Telepon: " + notelepon + " | " +
         "Varian: " + varian;
