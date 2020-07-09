@@ -7,6 +7,7 @@ var kecamatan;
 var notelepon;
 var bayar;
 var data;
+var ukuran;
 
 bayar = document.querySelector("#bayar").addEventListener("click", function(e) {
     e.preventDefault();
@@ -16,6 +17,7 @@ bayar = document.querySelector("#bayar").addEventListener("click", function(e) {
 
 
 function bayarSekarang() {
+    varian = document.querySelector("[name='ukuran']").value;
     varian = document.querySelector("[name='varian']").value;
     nama = document.querySelector("[name='nama']").value;
     alamat = document.querySelector("[name='alamat']").value;
@@ -29,7 +31,8 @@ function bayarSekarang() {
         "Kota: " + kota + " | " +
         "Kecamatan: " + kecamatan + " | " +
         "No Telepon: " + notelepon + " | " +
-        "Varian: " + varian;
+        "Varian: " + varian + " | " +
+        "Ukuran: " + ukuran;
     var wa = "https://wa.me/6285157302556?text=" + data;
     window.location.href = wa, true;
 
