@@ -8,6 +8,7 @@ var notelepon;
 var bayar;
 var data;
 var ukuran;
+var metode;
 
 bayar = document.querySelector("#bayar").addEventListener("click", function(e) {
     e.preventDefault();
@@ -25,6 +26,7 @@ function bayarSekarang() {
     kota = document.querySelector("[name='kota']").value;
     kecamatan = document.querySelector("[name='kecamatan']").value;
     notelepon = document.querySelector("[name='notelepon']").value;
+    metode = document.querySelector("[name='metodepembayaran']").value;
     data = "Halo kak saya ingin order dengan data berikut: | Nama Lengkap: " + nama + " | " +
         "Alamat: " + alamat + " | " +
         "Provinsi: " + provinsi + " | " +
@@ -32,7 +34,8 @@ function bayarSekarang() {
         "Kecamatan: " + kecamatan + " | " +
         "No Telepon: " + notelepon + " | " +
         "Varian: " + varian + " | " +
-        "Ukuran: " + ukuran;
+        "Ukuran: " + ukuran + " | " +
+        "Metode Pembayaran: " + metode;
     var wa = "https://wa.me/6285157302556?text=" + data;
     window.location.href = wa, true;
 
