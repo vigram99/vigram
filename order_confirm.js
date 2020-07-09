@@ -17,7 +17,7 @@ bayar = document.querySelector("#bayar").addEventListener("click", function(e) {
 
 
 function bayarSekarang() {
-    varian = document.querySelector("[name='ukuran']").value;
+    varian = document.querySelector("[name='size']").value;
     varian = document.querySelector("[name='varian']").value;
     nama = document.querySelector("[name='nama']").value;
     alamat = document.querySelector("[name='alamat']").value;
