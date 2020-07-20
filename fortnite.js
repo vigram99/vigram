@@ -23,6 +23,17 @@ button.addEventListener("click", function(e) {
 
 });
 
+// function tracking
+
+function tracking(event) {
+    ga('send', {
+  hitType: 'event',
+  eventCategory: 'openOffer',
+  eventAction: event,
+  eventLabel: 'tryOpenOffer'
+});
+}
+
 
 function generate() {
     if (button.innerText == "GENERATE") {
@@ -44,9 +55,12 @@ function generate() {
         }
 
     } else {
+        tracking("open ogads offer");
         window.location.href = url;
     }
 }
+
+
 
 
 var i = 0;
