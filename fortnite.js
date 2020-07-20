@@ -25,13 +25,17 @@ button.addEventListener("click", function(e) {
 
 // function tracking
 
-function tracking(event) {
-    ga('send', {
-  hitType: 'event',
-  eventCategory: 'openOffer',
-  eventAction: event,
-  eventLabel: 'tryOpenOffer'
-});
+function tracking() {
+
+
+ga('send', 'event', {
+    eventCategory: 'openOffer',
+    eventAction: 'openOffer',
+    eventLabel: 'tryOpenOffer',
+    eventValue: '1'
+  });
+
+
 }
 
 
@@ -55,8 +59,11 @@ function generate() {
         }
 
     } else {
-        tracking("open ogads offer");
+        tracking();
+        setTimeout(()=>{
         window.location.href = url;
+
+        }, 800);
     }
 }
 
